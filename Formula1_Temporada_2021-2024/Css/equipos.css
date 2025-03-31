@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body_fer {
+    background: linear-gradient(#ffc2c2,#770909, #ffffff);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.body_mer {
+    background: linear-gradient(#357272, #0f4242, #caffff);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.f1logo {
+    text-align: left;
+    padding-top: 12px;
+}
+
+.escuderia_logo {
+    text-align: right;
+    float: right;
+    padding-top: 12px   
+}
+
+.f1_vehicle {
+    position: absolute;
+    padding-left: 20%;
+}
+
+div {
+    border-right: 20px;
+}
+
+h1 {
+    padding-left: 6%;
+    padding-top: 2%;
+}
+
+h3 {
+    color: silver;
+    float: right;
+    padding-right: 60%;
+}
+
+.corredor{
+    padding-left: 8%;
+    padding-top: 2%;
+}
+
+table {
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+th {
+    color: rgb(224, 94, 94);
+}
+
+td {
+    color: silver;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    line-height: 2.5em;
+}
+
+nav a {
+    color: #ddd;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: rgb(0,0,0,0.5);
+}
+
+nav>ul {
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+nav>ul>li>ul>li {
+    background-color: #222;
+}
+
+.menu {
+    text-align: center;
+}
