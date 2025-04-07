@@ -160,11 +160,11 @@ body {
     .footer-content {
         display: flex;
         flex-direction: row;
-        align-items: flex-start; /* Cambia de center a flex-start */
+        align-items: flex-start;
         flex-grow: 1;
         gap: 20%;
         white-space: nowrap;
-        position: relative; /* Permite ajustes finos */
+        position: relative; 
         top: -6vh; 
         left: -10vw;   
         margin-left: -5vw;
@@ -172,7 +172,7 @@ body {
 
     .contact-info {
         display: flex;
-        gap: 40%; /* Espacio uniforme entre correo y teléfono */
+        gap: 40%; 
         margin-top: 2%;
     }
 
@@ -196,10 +196,10 @@ body {
 
     .copyright {
         position: absolute;
-        bottom: -200%;       /* Distancia desde abajo (en % del alto del contenedor) */
+        bottom: -200%;      
         right: -20%;       
         color: #808080;
         font-size: 0.9rem;
-        margin: 0;        /* Elimina margin-top (interfiere con posición absoluta) */
-        transform: none;  /* Elimina transformaciones previas */
+        margin: 0;        
+        transform: none;  
     }
