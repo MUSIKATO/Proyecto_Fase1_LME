@@ -12,20 +12,20 @@ body {
     position: relative;
 }
 
-.background-overlay {
+
+.background-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;
 }
-
 
 .background-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: center;
 }
 
@@ -38,7 +38,7 @@ body {
     min-height: 11vh;
     align-items: center;
     justify-content: space-between; 
-    position: fixed;
+    position: absolute;
     width: 100vw; 
     top: 0;
     left: 0; 
@@ -53,7 +53,6 @@ body {
     max-height: 20vh;
     margin-right: auto;
     margin-left: -5%;
-
 }
 
 .nav {
@@ -64,6 +63,7 @@ body {
     justify-content: center; 
     padding-left: 5vw; 
 }
+
 .nav-link {
     color: white;
     text-decoration: none;
@@ -75,19 +75,131 @@ body {
     transition: all 0.3s ease;
 }
 
-.main-content {
-    margin-top: 15vh;
-    padding: 5vh 8vw;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    color: white; 
-}
-
-
-
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
 
+
+.text-overlay {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+    z-index: 2;
+ }
+    
+    
+ .text-overlay h1 {
+    font-size: 3vw;
+    margin-bottom: 3vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    margin-left: -6%; /* Margen negativo funciona mejor */
+    position: relative;
+    left: -3%;
+    width: fit-content;
+}
+
+.text-overlay p {
+    font-size: 150%;
+    margin-top: 5%;
+    color: white;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(66, 66, 117, 0.999);
+    text-align: left; /* Alineación a la izquierda */
+    margin-left: -10%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.footer-container {
+    background-color: rgb(20, 20, 32);
+    color: white;
+    width: 100%;
+    min-height: 20vh; /* Reducido para mejor ajuste */
+    padding: 2vh 5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row; /* Cambiado a fila */
+    align-items: center;
+    z-index: 1000;
+    gap: 3vw; /* Espacio entre grupos */
+}
+
+.footer-container::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    height: 0.5%;
+    background: rgb(85, 82, 82); /* Efecto degradado */
+}
+    
+    .logo-section {
+        width: 20%;
+        min-width: 100px;
+        margin-right: 1vw;
+    }
+    
+    .footer-logo {
+        width: 100%;
+        height: 10vh;
+        max-height: 20vh;
+        object-fit: contain;
+        position: relative;
+        left: -10vw;         /* Mover más a la izquierda (valores negativos) */
+        top: 5.4vh;     
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; /* Cambia de center a flex-start */
+        flex-grow: 1;
+        gap: 20%;
+        white-space: nowrap;
+        position: relative; /* Permite ajustes finos */
+        top: -6vh; 
+        left: -10vw;   
+        margin-left: -5vw;
+    }
+
+    .contact-info {
+        display: flex;
+        gap: 40%; /* Espacio uniforme entre correo y teléfono */
+        margin-top: 2%;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .social-links a {
+        color: inherit; 
+        text-decoration: none;
+    }
+    
+
+    .social-links a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px; 
+        text-underline-offset: 3px; 
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: -200%;       /* Distancia desde abajo (en % del alto del contenedor) */
+        right: -20%;       
+        color: #808080;
+        font-size: 0.9rem;
+        margin: 0;        /* Elimina margin-top (interfiere con posición absoluta) */
+        transform: none;  /* Elimina transformaciones previas */
+    }
