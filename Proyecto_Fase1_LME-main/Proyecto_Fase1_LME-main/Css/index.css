@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    /*text-align: center;
+    text-decoration: none;  
+    padding-left: 34%;
+    padding-right: 25%;*/
+}
+
+nav li {
+    line-height: 2.5em;
+}
+
+nav a{
+    text-decoration: none;
+    color: silver;
+    display: block;
+    padding: 0 2.5em;
+}
+
+nav a:hover {
+    color: rgb(252, 153, 153);
+    background: rgb(180, 59, 59);
+}
+
+nav > ul {
+    background-color: #864545;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > ul {
+    position: absolute;
+    display: none;
+}
+
+nav > ul > li:hover ul {
+    display: block;
+}
