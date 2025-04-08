@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body_fer {
+    background: linear-gradient(#ffc2c2,#770909, #ffffff);
+    font-family: 'Khand', Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.body_mer {
+    background: linear-gradient(#357272, #0f4242, #caffff);
+    font-family: 'Khand', Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.f1logo {
+    text-align: left;
+    padding-top: 12px;
+}
+
+.escuderia_logo {
+    text-align: right;
+    float: right;
+    padding-top: 12px   
+}
+
+.f1_vehicle {
+    position: absolute;
+    padding-left: 20%;
+}
+
+div {
+    border-right: 20px;
+}
+
+h1 {
+    padding-left: 6%;
+    padding-top: 2%;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+    color: silver;
+}
+
+#temporada_2021 {
+    width: 2000px;
+    margin: 0px auto;
+    clear: left;
+        
+}
+
+#temporada_2021 div:nth-child(3n+1) {
+    margin-left: 0px;
+}
+
+#temporada_2021 div:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.cuadro{
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    margin: 30px 15px;
+    border: solid 1px black;
+    border-radius: 10px;
+    float: left;
+    text-align: justify;
+}
+
+.cuadro h3 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+table {
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+th {
+    color: rgb(224, 94, 94);
+}
+
+td {
+    color: silver;
+    text-align: center;
+}
+
+#detalles {
+    float: right;
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 50%;
+    table-layout: auto;
+    border-color: black;
+    font-size: 20px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    line-height: 2.5em;
+}
+
+nav a {
+    color: #ddd;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: rgb(0,0,0,0.5);
+}
+
+nav>ul {
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+nav>ul>li>ul>li {
+    background-color: #222;
+}
+
+.menu {
+    text-align: center;
+}

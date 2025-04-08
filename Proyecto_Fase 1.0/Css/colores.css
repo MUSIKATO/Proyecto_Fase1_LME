@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Khand', Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.header {
+    background-color: rgb(255, 28, 0);
+    color: white;
+    padding: 1.5vh 5vw; 
+    display: flex;
+    min-height: 11vh;
+    align-items: center;
+    justify-content:  flex-start; 
+    position: absolute;
+    width: 100vw; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 1000;
+    box-shadow: 0 0.2vh 0.5vh rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; 
+}
+
+.logo {
+    height: 10vh !important;
+    max-height: 20vh !important;
+    margin-right: 3vw !important;
+    margin-left: -5% !important;
+    
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+    z-index: 2;
+}
+    
+    
+.text-overlay h1 {
+    font-size: 3vw;
+    margin-bottom: 3vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    margin-left: -6%; /* Margen negativo funciona mejor */
+    position: relative;
+    left: -3%;
+    width: fit-content;
+}
+
+.text-overlay p {
+    font-size: 150%;
+    margin-top: 5%;
+    color: white;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(66, 66, 117, 0.999);
+    text-align: left; /* Alineación a la izquierda */
+    margin-left: -10%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.footer-container {
+    background-color: rgb(20, 20, 32);
+    color: white;
+    width: 100%;
+    min-height: 20vh; /* Reducido para mejor ajuste */
+    padding: 2vh 5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row; /* Cambiado a fila */
+    align-items: center;
+    z-index: 1000;
+    gap: 3vw; /* Espacio entre grupos */
+}
+
+.footer-container::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    height: 0.5%;
+    background: rgb(85, 82, 82); /* Efecto degradado */
+}
+    
+.logo-section {
+    width: 20%;
+    min-width: 100px;
+    margin-right: 1vw;
+}
+    
+.footer-logo {
+    width: 100%;
+    height: 10vh;
+    max-height: 20vh;
+    object-fit: contain;
+    position: relative;
+    left: -10vw;         /* Mover más a la izquierda (valores negativos) */
+    top: 5.4vh;     
+}
+    
+.footer-content {
+   display: flex;
+   flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 20%;
+    white-space: nowrap;
+    position: relative; 
+    top: -6vh; 
+    left: -10vw;   
+    margin-left: -5vw;
+}
+
+.contact-info {
+    display: flex;
+    gap: 40%; 
+    margin-top: 2%;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+   margin-top: 2%;
+}
+
+.social-links a {
+    color: inherit; 
+   text-decoration: none;
+}
+    
+
+.social-links a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+}
+
+.copyright {
+    position: absolute;
+    bottom: -200%;      
+    right: -20%;       
+    color: #808080;
+    font-size: 0.9rem;
+    margin: 0;        
+    transform: none;  
+}
+
+nav ul {
+    display: flex;
+    gap: 3vw; /* Ahora sí funcionará */
+    margin-left: 0vw;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav a {
+    color: #ddd;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav>ul {
+    background-color: rgb(255, 28, 0);
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+nav>ul>li>ul>li {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
