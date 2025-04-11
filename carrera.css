@@ -1,0 +1,47 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #e10600;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.carrera {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #1c1c1c;
+    border: 2px solid #e10600;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carrera img {
+    width: 300px;
+    height: auto;
+    border-right: 2px solid #e10600;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    color: #e10600;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
