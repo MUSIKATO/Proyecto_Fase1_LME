@@ -30,10 +30,10 @@
     height: 9vh;
     max-height: 10vh;
     width: auto;
-    max-width: 15vw;    /* Usa viewport width para responsividad */
+    max-width: 15vw;    
     margin-left: -5%;
     margin-right: auto;
-    object-fit: contain; /* Asegura que la imagen mantenga proporciones */
+    object-fit: contain; 
 }
 
 .nav {
