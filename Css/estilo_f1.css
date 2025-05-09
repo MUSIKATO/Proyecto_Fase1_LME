@@ -262,90 +262,63 @@ body {
   @media (max-width: 1000px) {
   
 
-    .footer-container {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-        height: 30%;
-        padding: 2vh 5vw;
-        position: fixed; 
-        bottom: 0;
-        left: 0;
-        right: 0;
-        max-height: 90%;
-        background-color: rgb(20, 20, 32);
-    }
-  
-  
-  .logo-section {
-        position: absolute;
-        top: 65%; 
-        left: 10%;
-        width: 80%;
-  }   
-  .footer-logo {
-    transform: translateY(10px);
-    width: 20%; 
-    height: auto;
-    margin-right: 68%;
-    top: 0;
-  }
-  
-  .footer-content {
-    flex-direction: column;
-    gap: 1.5vh;
-    padding-bottom: 1vh;
-    position: static;
-    margin: 0;
-    margin-top: 5vh;
-    align-items: flex-start;
-  }
-  
-  .footer-container::after {
-        content: "";
-        position: absolute;
-        top: 66%; 
-        left: 1vw;
-        right: 1vw;
-        height: 1px;
-        background: #444;
-    }
-  
-  
-  .copyright {
-    position: absolute;
-    top: 57%; 
-    left: 22%;
-    transform: translateX(-50%);
+.footer-container {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 30px 0 20px;
+    position: relative;
     width: 100%;
-    text-align: center;
-    color: #aaa;
-    font-size: 0.8rem;
-    border-top: none;
-    padding-top: 2vh;
-    margin-top: 8vh;
-  }
-  
-  
-  .social-links,
-  .contact-info {
+    margin-top: 50px;
+}
+
+.footer-content {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 2vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-section h4 {
+    color: #e10600;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-info p, .social-links a {
+    margin: 10px 0;
+    display: flex;
     align-items: center;
-    margin-left: -2%;
-  }
-  .social-links span {
-    margin-right: 5px;
-  }
-  
-  .footer-container::before {
-    display: none; 
-  
-  }
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #e10600;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 0.9rem;
+}
 
   .snoop-dogg {
     width: 60px;
