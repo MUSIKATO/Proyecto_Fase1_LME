@@ -211,8 +211,7 @@ body {
   
   
   
-  
-  @media (max-width: 1100PX) {
+  @media (max-width: 900PX) {
     .menu-label {
         display: block; 
         order: -1;
@@ -260,15 +259,10 @@ body {
   }
   
   
-  
+  /*celular*/
   @media (max-width: 1000px) {
   
-    body {
-        position: relative;
-        min-height: 100vh;
-        padding-bottom: 30vh; 
-    }
-  
+
     .footer-container {
         display: flex;
         align-items: flex-start;
@@ -280,14 +274,14 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        min-height: 30vh;
+        max-height: 90%;
         background-color: rgb(20, 20, 32);
     }
   
-
+  
   .logo-section {
         position: absolute;
-        top: 55%; 
+        top: 65%; 
         left: 10%;
         width: 80%;
   }   
@@ -323,7 +317,7 @@ body {
   .copyright {
     position: absolute;
     top: 57%; 
-    left: 21%;
+    left: 22%;
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
@@ -332,10 +326,9 @@ body {
     border-top: none;
     padding-top: 2vh;
     margin-top: 8vh;
-   
   }
   
-
+  
   .social-links,
   .contact-info {
     display: flex;
@@ -344,7 +337,7 @@ body {
     gap: 10px;
     margin-top: 2vh;
     align-items: center;
-    margin-left: -35px;
+    margin-left: -2%;
   }
   .social-links span {
     margin-right: 5px;
