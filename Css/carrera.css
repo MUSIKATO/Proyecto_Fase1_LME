@@ -166,6 +166,28 @@ li {
     margin-bottom: 5px;
 }
 
+.ver-mas {
+    background-color: #e10600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.ver-mas:hover {
+    background-color: #b20400;
+}
+
+.mas-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ccc;
+}
 
 .footer-container {
     background-color: rgb(20, 20, 32);
