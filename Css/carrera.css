@@ -114,6 +114,13 @@ body {
     font-size: 36px;
 }
 
+.contenedor-carreras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .carrera {
     display: flex;
     align-items: center;
@@ -122,11 +129,22 @@ body {
     border: 2px solid #e10600;
     border-radius: 12px;
     overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .carrera {
+        flex: 1 1 100%;
+    }
 }
 
 .carrera img {
-    width: 300px;
-    height: auto;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
     border-right: 2px solid #e10600;
 }
 
