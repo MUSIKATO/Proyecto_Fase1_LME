@@ -14,11 +14,6 @@ body {
     min-height: 100vh;
 }
 
-
-
-
-
-
 .background-image {
 
     position: fixed;
@@ -35,26 +30,16 @@ body {
 }
 
 .header {
-    background-color: rgb(255, 28, 0);
-    color: white;
-    overflow: visible; 
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 3vh 3vw; 
-
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-  justify-content: space-between; 
-    position: absolute;
-    top: -1%;
-    left: 0; 
-    right: 0; 
-    z-index: 3;
-    box-shadow: 0 0.2vh 0.5vh rgba(0, 0, 0, 0.2);
-    box-sizing: border-box; 
-    flex-wrap: nowrap;
-
 }
 
 .logo {
@@ -87,18 +72,17 @@ body {
 .nav ul {
     display: flex;
     list-style: none;
-    gap: 3vw;
     margin: 0;
     padding: 0;
 }
 
 .nav-link {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 5px;
     font-weight: bold;
-    transition: color 0.3s; 
+    transition: color 0.3s;
     background-color: transparent; 
 }
 
@@ -278,8 +262,7 @@ nav a {
 }
 
 nav>ul {
-    background-color: rgb(255, 28, 0);
-    overflow: hidden;
+    background-color: transparent
 }
 
 nav>ul>li {
