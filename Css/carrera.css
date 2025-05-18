@@ -364,6 +364,9 @@ nav ul {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+.contenedor-carreras{
+  margin-top:15%
+}
 
  .footer-container {
       display: flex;
