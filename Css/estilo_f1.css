@@ -33,6 +33,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left; 
+
+
+
 }
 
 .logo {
@@ -75,8 +79,15 @@ body {
     padding: 10px 15px;
     margin: 0 5px;
     font-weight: bold;
+<<<<<<< Updated upstream
     transition: color 0.3s; 
     background-color: transparent; 
+=======
+    transition: color 0.3s;
+    text-align: left; 
+
+
+>>>>>>> Stashed changes
 }
 
 .nav-link:hover {
