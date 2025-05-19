@@ -1,46 +1,33 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 .header {
     background-color: rgb(255, 28, 0);
     color: white;
-    overflow: visible; 
     width: 100%;
-    padding:  2vh 4vw;
+    padding: 3vh 3vw; 
     display: flex;
-    min-height:  6vh; 
     align-items: center;
-    justify-content: space-between; 
     position: absolute;
-    top: 0;
+    top: -1%;
     left: 0; 
     right: 0; 
-    z-index: 3;
     box-shadow: 0 0.2vh 0.5vh rgba(0, 0, 0, 0.2);
-    box-sizing: border-box; 
-    flex-wrap: nowrap;
+    z-index: 3;
 }
-
 
 .logo {
     height: 9vh;
+    margin-top: 0.9%;
     max-height: 10vh;
-    width: auto;
-    max-width: 15vw;    
-    margin-left: -5%;
-    margin-right: auto;
-    object-fit: contain; 
+    margin-left: -3.9%;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-start;
     margin-left: 3%;
-    flex-grow: 2;
+    margin-top: 1%;
 }
 
 .nav-link {
@@ -50,21 +37,19 @@
     font-size: clamp(1rem, 1.9vw, 4rem);
     letter-spacing: 0.05rem;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: all 0.3s ease;
     display: block;
     text-align: left; 
-}
-
+  }
 .nav ul {
     display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-    flex-direction: row;
+    list-style: none;
     gap: 3vw;
-    width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -81,24 +66,21 @@
     position: relative;
     min-height: 100vh;
     padding: 7.5% 5% 10%; 
-    box-sizing: border-box;
 }
 
 .contacto-container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 2.5%;
     background: rgba(10, 10, 10, 0.9);
     border-radius: 1%;
-
 }
 
 .contacto-container h1 {
     color: #ff1c00;
     font-size: 3vw; 
     margin: 0 0 1% 0;
-    text-transform: uppercase;
 }
 
 .subtitle {
@@ -106,7 +88,6 @@
     margin: 0 0 3% 0;
     font-size: 1.5vw;
 }
-
 
 .contacto-form {
     padding: 2.5%;
@@ -137,13 +118,11 @@
     font-size: 1.1vw;
 }
 
-
 select#asunto option {
     color: white !important;
     background-color: rgb(30, 30, 30) !important;
     padding: 10px !important;
 }
-
 
 .form-group textarea {
     min-height: 20vh;
@@ -171,7 +150,6 @@ select#asunto option {
     box-shadow: 0 0.5vh 1vh rgba(255, 28, 0, 0.4);
 }
 
-
 .contacto-info {
     padding: 2.5%;
     margin-top: 3%;
@@ -192,7 +170,6 @@ select#asunto option {
     font-size: 1.1vw;
     line-height: 1.6;
 }
-
 
 .creadores-section {
     width: 80%;
@@ -256,7 +233,6 @@ select#asunto option {
     text-align: center;
 }
 
-
 .footer-container {
     background-color: rgb(20, 20, 32);
     color: white;
@@ -298,7 +274,6 @@ select#asunto option {
     height: 0.5%;
     background: rgb(85, 82, 82);
 }
-    
     
 .footer-content {
    display: flex;
@@ -352,8 +327,7 @@ select#asunto option {
     display: none;
   }
   
-  
-  .menu-label .bar {
+.menu-label .bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -362,9 +336,7 @@ select#asunto option {
     transition: all 0.3s ease;
   }
   
-  
-  
-  @media (max-width: 900PX) {
+  @media (max-width: 700PX) {
     .menu-label {
         display: block; 
         order: -1;
@@ -409,24 +381,55 @@ select#asunto option {
     .menu-toggle:checked + .menu-label .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-  }
   
-  
-  @media (max-width: 700px) {
-  
+    .contacto-container{
+        margin-top: 15%;
+    }
 
+    .subtitle{
+        font-size: 1rem;
+    }
+
+    .form-group label {
+        font-size: 1rem ;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+    font-size: 1rem ;
+    padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 1.2rem !important;
+        padding: 15px;
+    }
+
+    .contacto-info h3 {
+        font-size: 1.5rem;
+        margin: 0 0 1.5rem;
+        text-align: center;
+    }
+
+    .contacto-info p {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        margin: 0 0 1rem;
+        border-bottom: 1px solid #444;
+    }
+
+    .contacto-info strong {
+        display: inline-block;
+        min-width: 85px;
+    }
+ 
     .footer-container {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: 100%;
-        height: 30%;
-        padding: 2vh 5vw;
-        bottom: -40%;
-        left: 0;
-        right: 0;
-        max-height: 90%;
-        background-color: rgb(20, 20, 32);
+        height: 20%;
+        bottom: -20%;
     }
 
     .logo-section {
@@ -439,8 +442,6 @@ select#asunto option {
         width: 100%;
         height: 10vh;
         max-height: 20vh;
-        object-fit: contain;
-        position: absolute;
         right: 35%;       
         top: 60%;     
     }
@@ -466,15 +467,12 @@ select#asunto option {
         background: #444;
     }
   
-  
   .copyright {
     position: absolute;
     top: 57%; 
-    left: 22%;
-    transform: translateX(-50%);
+    left: -4%;
     width: 100%;
     text-align: center;
-    color: #aaa;
     font-size: 0.8rem;
     border-top: none;
     padding-top: 2vh;
@@ -484,7 +482,6 @@ select#asunto option {
 
   .social-links{
     display: flex;
-    
     flex-wrap: nowrap;
     justify-content: center;
     gap: 10px;
@@ -495,13 +492,13 @@ select#asunto option {
   
  
   .contact-info {
-
     flex-direction: column;
     gap: 10px;
     margin-top: 1vh;
     align-items: right;
     margin-left: -3%;
   }
+  
   .social-links span {
     margin-right: 5px;
   }
@@ -531,12 +528,13 @@ select#asunto option {
         padding: 0.2rem 0.5rem;
     }
 
-
+    .contacto-container{
+        margin-top: 15%;
+    }
 
     .footer-container {
         bottom: -20%;
         flex-direction: column;
-
     }
 
     .footer-logo {
@@ -544,40 +542,26 @@ select#asunto option {
         left: -40%;
     }
 
-
-
     .social-links{
-
         gap: 10px;
-        
         margin-top: 2vh;
-
         margin-left: 41%;
-      }
-      
-     
-      .contact-info {
-    
+    }
+
+    .contact-info {
         flex-direction: row;
         margin-top:11%;
         gap: 60%;
         margin-left: -85%;
-        
-      }
-
-
+   }
 
       .copyright {
-
         top: 57%; 
         left: 32%;
         width: 100%;
         text-align: center;
-        color: #aaa;
         font-size: 1rem;
-        border-top: none;
         padding-top: 2vh;
         margin-top: 8vh;
-      }
-      
+   }
 }
