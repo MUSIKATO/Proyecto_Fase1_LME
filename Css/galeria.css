@@ -302,7 +302,10 @@ transition: all 0.3s ease;
 .menu-toggle:checked + .menu-label .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
-
+.column {
+    flex: 0 0 calc(50% - 10px);
+    max-width: 50%;
+  }
 
  .footer-container {
       display: flex;
@@ -398,7 +401,12 @@ transition: all 0.3s ease;
 }
 
 
-
+@media (max-width: 992px) {
+  .column {
+    flex: 0 0 calc(50% - 10px);
+    max-width: 50%;
+  }
+}
 
 @media (min-width: 701px) and (max-width: 1025px) {
 .header {
@@ -418,7 +426,6 @@ transition: all 0.3s ease;
     font-size: clamp(0.7rem, 1.8vw, 1.2rem);
     padding: 0.2rem 0.5rem;
 }
-
 
 
 .footer-container {
