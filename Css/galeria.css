@@ -400,7 +400,7 @@ transition: all 0.3s ease;
 
 
 
-@media (min-width: 701px) and (max-width: 992px) {
+@media (min-width: 701px) and (max-width: 1025px) {
 .header {
     padding: 1vh 2vw;
 }

@@ -509,7 +509,7 @@ select#asunto option {
   }
 }
 
-@media (min-width: 701px) and (max-width: 992px) {
+@media (min-width: 701px) and (max-width: 1025px) {
     .header {
         padding: 1vh 2vw;
     }
@@ -564,4 +564,5 @@ select#asunto option {
         padding-top: 2vh;
         margin-top: 8vh;
    }
+   
 }
