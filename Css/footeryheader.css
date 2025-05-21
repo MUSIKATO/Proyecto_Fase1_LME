@@ -290,6 +290,8 @@ nav>ul>li:hover ul {
         .logo {
             position: absolute;
             left: 50%;
+            height: 7vh;
+            width: auto;
             transform: translateX(-50%);
             margin: 0; 
         }

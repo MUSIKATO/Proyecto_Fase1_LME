@@ -342,6 +342,10 @@ select#asunto option {
         order: -1;
         margin-right: auto;
     }
+
+    .header{
+        margin-top: 6%;
+    }
   
     .logo {
         position: absolute;
@@ -423,13 +427,53 @@ select#asunto option {
         display: inline-block;
         min-width: 85px;
     }
+
+
+    .creadores-section {
+        padding: 8% 5%;
+        margin: 10% auto;
+    }
+
+    .creadores-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 8%;
+    }
+
+    .creadores-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .creador-card {
+        padding: 8%;
+        margin: 0 5%;
+        transform: scale(1.05);
+    }
+
+    .creador-card img {
+        width: 150px ;
+        height: 150px ;
+        border-width: 3px;
+        margin-bottom: 5%;
+    }
+
+    .creador-card h3 {
+        font-size: 1.3rem;
+        margin: 5% 0;
+    }
+
+    .creador-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 3% 0;
+    }
  
     .footer-container {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        height: 20%;
-        bottom: -20%;
+        height: 8%;
+        bottom: -10%;
     }
 
     .logo-section {
@@ -529,40 +573,35 @@ select#asunto option {
     }
 
     .contacto-container{
-        margin-top: 15%;
+        margin-top: 10%;
     }
-
+    
     .footer-container {
-        bottom: -20%;
         flex-direction: column;
+        bottom: -10%;
     }
-
+    
     .footer-logo {
         top: 50%;
         left: -40%;
     }
-
+    
     .social-links{
         gap: 10px;
         margin-top: 2vh;
         margin-left: 41%;
-    }
-
+      }
+    
     .contact-info {
         flex-direction: row;
         margin-top:11%;
         gap: 60%;
         margin-left: -85%;
-   }
-
-      .copyright {
-        top: 57%; 
-        left: 32%;
-        width: 100%;
-        text-align: center;
-        font-size: 1rem;
-        padding-top: 2vh;
-        margin-top: 8vh;
-   }
-   
-}
+    }
+    
+    .copyright{
+      right: -70px;
+        top: 207px;
+    }
+    }
+    

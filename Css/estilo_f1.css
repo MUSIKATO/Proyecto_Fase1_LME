@@ -45,9 +45,9 @@ body {
   
   .logo {
     height: 9vh;
-    max-height: 10vh;
+ 
     width: auto;
-    max-width: 15vw;    
+  
     margin-left: -5%;
     margin-right: auto;
     object-fit: contain; 
@@ -257,6 +257,9 @@ body {
         left: 50%;
         transform: translateX(-50%);
         margin: 0; 
+        height: 7vh;
+ 
+    width: auto;
     }
     
     .nav ul {
