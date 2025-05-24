@@ -492,8 +492,13 @@ display: none;
     padding: 0.2rem 0.5rem;
 }
 
+.titulo{
+  margin-top: 9vh;
+}
+
 .footer-container {
     flex-direction: column;
+    bottom: auto;
 }
 
 .footer-logo {
@@ -516,7 +521,7 @@ display: none;
 
 .copyright{
   right: -70px;
-  top: 207px;
+  top: 199px;
 }
 }
 

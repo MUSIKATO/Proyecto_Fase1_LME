@@ -350,6 +350,7 @@ select#asunto option {
     .logo {
         position: absolute;
         left: 50%;
+        height: 70%;
         transform: translateX(-50%);
         margin: 0; 
     }
@@ -574,6 +575,7 @@ select#asunto option {
 
     .contacto-container{
         margin-top: 10%;
+        bottom: auto;
     }
     
     .footer-container {
@@ -601,7 +603,7 @@ select#asunto option {
     
     .copyright{
       right: -70px;
-        top: 207px;
+        top: 199px;
     }
     }
     

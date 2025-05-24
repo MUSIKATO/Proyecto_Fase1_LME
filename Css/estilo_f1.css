@@ -45,9 +45,7 @@ body {
   
   .logo {
     height: 9vh;
- 
     width: auto;
-  
     margin-left: -5%;
     margin-right: auto;
     object-fit: contain; 
@@ -56,7 +54,7 @@ body {
   .nav {
     display: flex;
     justify-content: flex-start;
-    margin-left: 3%;
+    margin-left: 1.6%;
     flex-grow: 2;
   }
   
@@ -87,6 +85,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
   }
+  
   
 
 
